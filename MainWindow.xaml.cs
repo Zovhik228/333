@@ -1,4 +1,5 @@
-﻿using System;
+﻿using _333.Models;
+using System;
 using System.Collections.Generic;
 using System.Linq;
 using System.Text;
@@ -20,9 +21,17 @@ namespace _333
     /// </summary>
     public partial class MainWindow : Window
     {
+        public static MainWindow Instance { get; set; }
+        public Users LoginUser { get; set; }
         public MainWindow()
         {
             InitializeComponent();
+            Instance = this;
+            OpenPages(new Pages.Login());
+        }
+        public void OpenPages(Page page)
+        {
+            frame.Navigate(page);
         }
     }
 }
