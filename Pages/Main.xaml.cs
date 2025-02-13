@@ -28,13 +28,7 @@ namespace _333.Pages
         public UsersContext usersContext = new UsersContext();
         public MessagesContext messagesContext = new MessagesContext();
         public DispatcherTimer Timer = new DispatcherTimer() { Interval = new System.TimeSpan(0, 0, 1) };
-        public Main()
-        {
-            InitializeComponent();
-            LoadUsers();
-            Timer.Tick += Timer_Tick;
-            Timer.Start();
-        }
+       
         public void LoadUsers()
         {
             foreach (Users user in usersContext.Users)
