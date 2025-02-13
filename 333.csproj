@@ -65,6 +65,8 @@
     </Compile>
     <Compile Include="Classes\Common\BitmapFromArrayByte.cs" />
     <Compile Include="Classes\Common\Config.cs" />
+    <Compile Include="Classes\MessagesContext.cs" />
+    <Compile Include="Classes\UsersContext.cs" />
     <Compile Include="MainWindow.xaml.cs">
       <DependentUpon>MainWindow.xaml</DependentUpon>
       <SubType>Code</SubType>
